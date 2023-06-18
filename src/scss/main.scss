@@ -1,0 +1,37 @@
+@import "./functions/breakpoints";
+@import "./fonts/fonts";
+@import "./variables/variables";
+@import "./reset/reset";
+
+@import "./layout/layout";
+
+@import "./header/header";
+
+@import "./footer/footer";
+@import "./footer/social";
+@import "./footer/menu";
+
+@import "./header/main-menu";
+
+.scroll {
+
+    .header {
+        background-color: #ffffff;
+    }
+
+    .main-menu>.item>.link {
+        color: #333333;
+    }
+
+    .header>.container>.logo-link .logo {
+        display: none;
+    }
+
+    .header>.container>.logo-link .logo-sticky {
+        display: block;
+    }
+
+    .mobile-menu-btn {
+        color: #333333;
+    }
+}

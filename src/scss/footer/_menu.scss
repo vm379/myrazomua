@@ -1,0 +1,106 @@
+.footer-menu {
+
+    .item {
+        border-bottom: 1px solid rgba(255, 255, 255, .05);
+
+        &:hover {
+
+            .link {
+                color: #bbbbbb;
+            }
+        }
+
+        i {
+            display: inline-block;
+            font-size: 11px;
+            color: #999999;
+        }
+
+        .link {
+            display: inline-block;
+            padding: 10px 0 10px 5px;
+            color: #999999;
+            font-size: 14px;
+        }
+    }
+}
+
+.bottom-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        margin: 0 10px 0 10px;
+
+        &:first-child {
+            margin: 0;
+        }
+
+        &:last-child {
+
+            .link {
+
+                &::after {
+                    margin: 0;
+                    content: "";
+                }
+            }
+        }
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {
+            margin: 10px 0;
+        }
+
+        .link {
+            display: inline-block;
+            color: #999999;
+            font-size: 13px;
+
+            &::after {
+                margin: 0 0 0 10px;
+                content: "/";
+
+                @include media-breakpoint-only(xxl) {}
+
+                @include media-breakpoint-only(xl) {}
+
+                @include media-breakpoint-only(lg) {}
+
+                @include media-breakpoint-only(md) {}
+
+                @include media-breakpoint-only(sm) {}
+
+                @include media-breakpoint-only(xs) {
+                    content: "";
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
