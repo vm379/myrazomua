@@ -30,8 +30,5 @@
     "gulp-version-number": "^0.2.4",
     "sass": "^1.57.0",
     "webpack-stream": "^7.0.0"
-  },
-  "dependencies": {
-    "latest": "^0.2.0"
   }
 }
