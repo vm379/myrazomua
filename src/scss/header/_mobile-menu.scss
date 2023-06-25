@@ -1,0 +1,122 @@
+.b-mobile-menu {
+    display: none;
+    position: relative;
+
+    // @include media-breakpoint-only(xxl) {}
+
+    // @include media-breakpoint-only(xl) {}
+
+    // @include media-breakpoint-only(lg) {}
+
+    // @include media-breakpoint-only(md) {}
+
+    // @include media-breakpoint-only(sm) {}
+
+    // @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        display: block;
+    }
+}
+
+.mobile-menu-nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+
+    background-color: #ffffff;
+
+    >.container {
+        margin: 0 auto;
+
+        @include media-breakpoint-only(xxl) {
+            max-width: 1320px;
+        }
+
+        @include media-breakpoint-only(xl) {
+            max-width: 1140px;
+        }
+
+        @include media-breakpoint-only(lg) {
+            max-width: 960px;
+        }
+
+        @include media-breakpoint-only(md) {
+            max-width: 720px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            max-width: auto;
+            padding: 0 15px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            max-width: auto;
+            padding: 0 15px;
+        }
+    }
+}
+
+.mobile-menu {
+    display: none;
+
+    padding: 15px 0;
+
+    .item {
+        border-bottom: 1px solid #e6e6e6;
+
+        &:first-child {}
+
+        &:last-child {
+            border-bottom: 0;
+        }
+
+        .link {
+            display: block;
+            padding: 5px 0;
+
+            font-size: 15px;
+            color: #333333;
+
+            line-height: normal
+        }
+    }
+
+    >.active {
+
+        .link {
+            color: #42b8d4;
+        }
+    }
+}
+
+.mobile-menu-btn {
+    color: #333333;
+    cursor: pointer;
+
+    .bar {
+        font-size: 25px;
+    }
+
+    .close {
+        font-size: 28px;
+        display: none;
+    }
+}
+
+.opened {
+
+    .bar {
+        display: none;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+}

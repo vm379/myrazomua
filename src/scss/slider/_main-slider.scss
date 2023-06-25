@@ -82,6 +82,10 @@
 
     .center {
         flex-grow: 1;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .right {
@@ -126,7 +130,7 @@
 }
 
 .miniatures-container {
-    padding: 2px 0 2px 0;
+    padding: 0 0 20px 0;
 }
 
 .miniatures-list {
@@ -144,6 +148,7 @@
 }
 
 .miniature {
+    border: 1px solid #ffffff50;
     opacity: .5;
 
     &:hover {
@@ -182,5 +187,130 @@
 
     @include media-breakpoint-down(lg) {
         display: none;
+    }
+}
+
+.slide-info {}
+
+.slide-info-list {
+
+    .item {
+        display: none;
+    }
+
+    .t {
+        display: block;
+    }
+}
+
+.slide-info--item {
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {
+        text-align: center;
+    }
+
+    .title {
+        margin: 0;
+        padding: 0;
+
+        color: #ffffff;
+        font-size: 50px;
+        font-family: 'Playfair Display', serif;
+
+        line-height: 60px;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            padding-bottom: 25px;
+        }
+
+        @include media-breakpoint-only(sm) {
+            padding-bottom: 25px;
+            font-size: 35px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            font-size: 18px;
+            padding-bottom: 15px;
+            line-height: normal;
+        }
+    }
+
+    .text {
+        padding: 15px 0;
+        width: 300px;
+
+        // @include media-breakpoint-only(xxl) {}
+
+        // @include media-breakpoint-only(xl) {}
+
+        // @include media-breakpoint-only(lg) {}
+
+        // @include media-breakpoint-only(md) {}
+
+        // @include media-breakpoint-only(sm) {}
+
+        // @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+
+        p {
+            margin: 0;
+            padding: 0;
+            color: #ffffff;
+            font-size: 15px;
+        }
+    }
+
+    .link {
+
+        .btn {
+            display: inline-block;
+            // max-width: 250px;
+            padding: 12px 25px;
+            background-color: #337ab7;
+            color: #ffffff;
+            line-height: normal;
+            text-align: center;
+            font-size: 14px;
+            text-transform: uppercase;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            @include media-breakpoint-only(sm) {
+                font-size: 12px;
+                padding: 10px 15px;
+            }
+
+            @include media-breakpoint-only(xs) {
+                font-size: 11px;
+                padding: 10px;
+            }
+        }
     }
 }

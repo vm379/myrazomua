@@ -1,10 +1,21 @@
-const slides = document.querySelectorAll('.slides > .slide');
-const miniatures = document.querySelectorAll('.miniatures-list > .item');
-const next = document.querySelector('.navigation-btn > .next');
-const prev = document.querySelector('.navigation-btn > .prev');
+import { el, els, ev } from "./functions.js";
 
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
+// const slides = document.querySelectorAll('.slides > .slide');
+// const miniatures = document.querySelectorAll('.miniatures-list > .item');
+// const info = document.querySelectorAll('.slide-info-list > .item');
+// const next = document.querySelector('.navigation-btn > .next');
+// const prev = document.querySelector('.navigation-btn > .prev');
+
+const slides = els('.slides > .slide');
+const miniatures = els('.miniatures-list > .item');
+const info = els('.slide-info-list > .item');
+const next = el('.navigation-btn > .next');
+const prev = el('.navigation-btn > .prev');
+
+if (next != null && prev != null) {
+    next.addEventListener('click', nextSlide);
+    prev.addEventListener('click', prevSlide);
+}
 
 const timeout = 10000;
 
@@ -80,11 +91,13 @@ function decrement() {
 function changeSlide() {
     slides[slide].classList.add('show');
     miniatures[slide].classList.add('current');
+    info[slide].classList.add('t');
 
     for (let i = 0; i < slides.length; i++) {
         if (i != slide) {
             slides[i].classList.remove('show');
             miniatures[i].classList.remove('current');
+            info[i].classList.remove('t');
         }
     }
 }

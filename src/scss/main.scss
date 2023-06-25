@@ -1,13 +1,16 @@
 @import "./functions/breakpoints";
-@import "./fonts/fonts";
 @import "./variables/variables";
 @import "./reset/reset";
+
+@import "./fonts/fonts";
+@import "./functions/fonts";
 
 @import "./layout/layout";
 
 @import "./header/header";
 @import "./slider/main-slider";
 @import "./header/lang";
+@import "./header/mobile-menu";
 
 @import "./footer/footer";
 @import "./footer/social";
@@ -16,6 +19,17 @@
 @import "./header/main-menu";
 
 @import "./page/page";
+
+@import "./page/landing/landing";
+@import "./page/landing/links-panel";
+@import "./page/landing/landing-about";
+
+@import "./page/contacts/contacts";
+@import "./page/contacts/map";
+
+@import "./page/blog/blog-page-card";
+
+@import "./layout/article";
 
 .scroll {
 

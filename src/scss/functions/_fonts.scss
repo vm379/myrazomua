@@ -1,0 +1,20 @@
+// base
+// font-family: 'Lato', sans-serif;
+
+// titles
+// font-family: 'Playfair Display', serif;
+
+// elements titles
+// font-family: 'Dosis', sans-serif;
+
+@mixin base-font {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin title-font {
+    font-family: 'Playfair Display', serif;
+}
+
+@mixin elements-font {
+    font-family: 'Dosis', sans-serif;
+}

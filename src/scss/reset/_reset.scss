@@ -14,9 +14,40 @@ ul {
     list-style: none;
 }
 
+ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+dl {
+    margin: 0;
+    padding: 0;
+
+    dt {
+        margin: 0;
+        padding: 0;
+    }
+
+    dd {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 button {
     margin: 0;
     padding: 0;
     background: none;
     border: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
 }

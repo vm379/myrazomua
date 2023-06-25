@@ -5,7 +5,7 @@ import newer from 'gulp-newer';
 export const img = () => {
     return gulp.src("./src/img/**/*.*")
 
-        // 
+
         // .pipe(newer('./build/img/'))
         // .pipe(imagemin({
         //     progressive: true,
@@ -13,7 +13,7 @@ export const img = () => {
         //     interlaced: true,
         //     optimizationlevel: 3
         // }))
-        // 
+
 
         .pipe(gulp.dest("./build/img/"));
 }

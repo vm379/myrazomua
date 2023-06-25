@@ -1,0 +1,126 @@
+.landing-about {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        flex-direction: column;
+    }
+
+    .col-1 {}
+
+    .col-2 {
+        flex-grow: 1;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-grow: 0;
+        }
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            flex-direction: column;
+            padding-top: 25px;
+        }
+    }
+}
+
+.landing-about--title {
+    width: 450px;
+    padding-bottom: 25px;
+
+    position: relative;
+
+    color: #333333;
+    font-size: 25px;
+    @include title-font();
+
+    &:before {
+        position: absolute;
+        width: 40px;
+        height: 3px;
+        content: " ";
+        left: 0;
+        bottom: 0;
+        background-color: #42b8d4;
+    }
+
+    &::after {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        content: " ";
+        left: 43px;
+        bottom: 0;
+        background-color: #42b8d4;
+    }
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {
+        width: 400px;
+    }
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .tt {
+        margin: 15px 0 15px 0;
+
+        &:first-child {
+            margin: 0 0 15px 0;
+        }
+
+        &:last-child {
+            margin: 15px 0 0 0;
+        }
+    }
+}
+
+.landing-about--text {
+
+    p {
+        margin: 5px 0 5px 0;
+
+        &:first-child {
+            margin: 0 0 5px 0;
+        }
+
+        &:last-child {
+            margin: 5px 0 0 0;
+        }
+
+        &:only-child {
+            margin: 0;
+        }
+    }
+}
