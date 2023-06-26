@@ -1,11 +1,5 @@
 import { el, els, ev } from "./functions.js";
 
-// const slides = document.querySelectorAll('.slides > .slide');
-// const miniatures = document.querySelectorAll('.miniatures-list > .item');
-// const info = document.querySelectorAll('.slide-info-list > .item');
-// const next = document.querySelector('.navigation-btn > .next');
-// const prev = document.querySelector('.navigation-btn > .prev');
-
 const slides = els('.slides > .slide');
 const miniatures = els('.miniatures-list > .item');
 const info = els('.slide-info-list > .item');
@@ -111,15 +105,18 @@ function startFromSlide() {
 }
 
 function miniaturesInitialize() {
-    for (let i = 0; i < miniatures.length; i++) {
-        miniatures[i].addEventListener('click', function () {
-            stop();
-            animationOff();
 
-            slide = i;
+    if (miniatures != 0) {
+        for (let i = 0; i < miniatures.length; i++) {
+            miniatures[i].addEventListener('click', function () {
+                stop();
+                animationOff();
 
-            changeSlide();
-            start();
-        });
+                slide = i;
+
+                changeSlide();
+                start();
+            });
+        }
     }
 }
