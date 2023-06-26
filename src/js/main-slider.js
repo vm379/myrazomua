@@ -16,8 +16,10 @@ const timeout = 10000;
 let slide = startFromSlide();
 let timeoutId;
 
-start();
-miniaturesInitialize();
+if (slides.length != 0) {
+    start();
+    miniaturesInitialize();
+}
 
 function start() {
     timeoutId = setTimeout(run, timeout);
@@ -105,18 +107,15 @@ function startFromSlide() {
 }
 
 function miniaturesInitialize() {
+    for (let i = 0; i < miniatures.length; i++) {
+        miniatures[i].addEventListener('click', function () {
+            stop();
+            animationOff();
 
-    if (miniatures != 0) {
-        for (let i = 0; i < miniatures.length; i++) {
-            miniatures[i].addEventListener('click', function () {
-                stop();
-                animationOff();
+            slide = i;
 
-                slide = i;
-
-                changeSlide();
-                start();
-            });
-        }
+            changeSlide();
+            start();
+        });
     }
 }
