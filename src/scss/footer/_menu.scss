@@ -1,24 +1,66 @@
 .footer-menu {
 
     .item {
+        padding: 10px 0 10px 0;
         border-bottom: 1px solid rgba(255, 255, 255, .05);
 
-        &:hover {
-
-            .link {
-                color: #bbbbbb;
-            }
+        &:first-child {
+            padding: 0 0 10px 0;
         }
 
-        i {
-            display: inline-block;
-            font-size: 11px;
-            color: #999999;
+        &:last-child {}
+
+        &:only-child {
+            padding: 0;
         }
 
         .link {
-            display: inline-block;
-            padding: 10px 0 10px 5px;
+            display: block;
+
+            &:hover {
+
+                .footer-menu--item {
+
+                    >.icon {
+
+                        i {
+                            color: #bebebe;
+                        }
+                    }
+
+                    >.title {
+
+                        .t {
+                            color: #bebebe;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-menu--item {
+    display: flex;
+    flex-direction: row;
+
+    >.icon {
+        width: 10px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        i {
+            font-size: 10px;
+            color: #999999;
+        }
+    }
+
+    >.title {
+
+        .t {
             color: #999999;
             font-size: 14px;
         }
