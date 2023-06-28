@@ -1,11 +1,29 @@
 .article {
 
     h1 {
-        margin: 15px 0 25px;
+        margin: 0 0 35px;
         line-height: normal;
 
+        @include title-font();
+        color: #333333;
+        font-size: 25px;
+
         &:first-child {
-            margin: 0 0 25px;
+            margin: 0 0 35px;
+        }
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {
+            font-size: 18px;
         }
     }
 
@@ -62,14 +80,14 @@
 
         dt {
             margin: 0;
-            margin: 5px 0 5px 0;
+            margin: 2px 0 2px 0;
 
             &:first-child {
-                margin: 0 0 5px 0;
+                margin: 0 0 2px 0;
             }
 
             &:last-child {
-                margin: 5px 0 0 0;
+                margin: 2px 0 0 0;
             }
 
             &:only-child {
@@ -79,7 +97,7 @@
 
         dd {
             margin: 0 0 10px 0;
-            padding: 0 0 0 25px;
+            padding: 0 0 0 15px;
         }
     }
 }

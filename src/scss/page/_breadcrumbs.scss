@@ -1,0 +1,45 @@
+.breadcrumbs {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {}
+
+    @include media-breakpoint-down(lg) {
+        display: none;
+    }
+
+    .item {
+
+        .link {
+            color: #42b8d4;
+
+            &:hover {
+                color: #bb0000;
+            }
+        }
+    }
+
+    .home {
+
+        .link {
+            color: #42b8d4;
+        }
+    }
+
+    .delimiter {
+        padding: 0 5px;
+
+        .d {}
+    }
+}
