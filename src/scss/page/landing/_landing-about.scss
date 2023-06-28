@@ -124,3 +124,25 @@
         }
     }
 }
+
+.landing-about--link {
+    padding-top: 25px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .link {
+
+        .btn {
+            display: inline-block;
+            padding: 10px 25px;
+            background-color: #337ab7;
+            color: #ffffff;
+            line-height: normal;
+            text-align: center;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+}

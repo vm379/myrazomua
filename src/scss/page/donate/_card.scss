@@ -1,0 +1,21 @@
+.banks-details {}
+
+.banks-details-card {
+    margin: 25px 0;
+    border: 1px solid #e6e6e6;
+    background-color: #fdfdfd;
+
+    .title {
+        padding: 2px 15px;
+        background: #e6e6e6;
+        color: #333333;
+    }
+
+    >.container {
+        padding: 0 15px;
+
+        >.content {
+            font-size: 13px;
+        }
+    }
+}

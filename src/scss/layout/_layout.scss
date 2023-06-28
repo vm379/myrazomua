@@ -403,7 +403,6 @@ body {
     }
 }
 
-
 .page-block--title {
     padding-bottom: 25px;
 
@@ -430,7 +429,7 @@ body {
     padding-top: 25px;
     padding-bottom: 55px;
 
-    .container {
+    >.container {
         display: flex;
         flex-direction: row;
 
@@ -465,7 +464,7 @@ body {
             flex-direction: column-reverse;
         }
 
-        .content {
+        >.content {
             flex-grow: 1;
             padding-right: 45px;
 

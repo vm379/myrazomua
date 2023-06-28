@@ -1,6 +1,6 @@
 .blog-cards {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
 
     @include media-breakpoint-only(xxl) {}
@@ -9,9 +9,13 @@
 
     @include media-breakpoint-only(lg) {}
 
-    @include media-breakpoint-only(md) {}
+    @include media-breakpoint-only(md) {
+        grid-template-columns: 1fr 1fr;
+    }
 
-    @include media-breakpoint-only(sm) {}
+    @include media-breakpoint-only(sm) {
+        grid-template-columns: 1fr 1fr;
+    }
 
     @include media-breakpoint-only(xs) {
         grid-template-columns: 1fr;
