@@ -32,6 +32,6 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.6.0"
+    "swiper": "^9.4.1"
   }
 }
