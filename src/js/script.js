@@ -3,3 +3,4 @@ import "./functions.js";
 import "./main-slider.js";
 import "./mobile-menu.js";
 import "./partners.js";
+import "./article-gallery.js";

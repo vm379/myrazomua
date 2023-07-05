@@ -3,6 +3,7 @@
 
 <head>
     @@include('blocks/head.html', {"title":"Donate"})
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" /> -->
 </head>
 
 <body class="body">
@@ -130,9 +131,88 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="b-page-gallery">
+                            <div class="row-1">
+                                <div class="gallery-title">
+                                    <h4 class="title">Галерея</h4>
+                                </div>
+                            </div>
+
+                            <div class="row-2">
+                                <div class="article-gallery">
+                                    <a data-fancybox="gallery" href="../img/gallery/1.jpeg">
+                                        <img class="rounded" src="../img/gallery/1.jpeg" />
+                                    </a>
+
+                                    <a data-fancybox="gallery" href="../img/gallery/2.jpeg">
+                                        <img class="rounded" src="../img/gallery/2.jpeg" />
+                                    </a>
+
+                                    <a data-fancybox="gallery" href="../img/gallery/3.jpeg">
+                                        <img class="rounded" src="../img/gallery/3.jpeg" />
+                                    </a>
+
+                                    <a data-fancybox="gallery" href="../img/gallery/4.jpeg">
+                                        <img class="rounded" src="../img/gallery/4.jpeg" />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <aside class="aside">
+                        <div class="aside-block">
+                            <div class="aside-menu--title">Форма Зв'язку</div>
+
+                            <form action="" class="aside-form">
+                                <div class="fld contact-form--field name">
+                                    <div class="label">
+                                        <label for="name">Ім'я</label>
+                                    </div>
+
+                                    <div class="input">
+                                        <input placeholder="Ім'я" name="name" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fld contact-form--field phone">
+                                    <div class="label">
+                                        <label for="name">Телефон</label>
+                                    </div>
+
+                                    <div class="input">
+                                        <input placeholder="Телефон" name="name" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fld contact-form--field email">
+                                    <div class="label">
+                                        <label for="name">Email</label>
+                                    </div>
+
+                                    <div class="input">
+                                        <input placeholder="Email" name="name" type="text">
+                                    </div>
+                                </div>
+
+                                <div class="fld contact-form--field text">
+                                    <div class="label">
+                                        <label for="name">Повідомлення</label>
+                                    </div>
+
+                                    <div class="textarea">
+                                        <textarea placeholder="Повідомлення" name="message" id="" cols="30"
+                                            rows="10"></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="fld field submit">
+                                    <input type="submit" class="btn" name="feedback-form" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+
                         <div class="aside-block">
                             <div class="aside-menu--title">Наші проекти</div>
 
@@ -192,70 +272,133 @@
                         </div>
 
                         <div class="row-2">
-                            <form action="" class="page-form">
-                                <div class="fld name">
-                                    <div class="contact-form--field">
-                                        <div class="label">
-                                            <label for="name">Ім'я</label>
+                            <div class="page-form-columns">
+                                <div class="col-1">
+                                    <form action="" class="page-form">
+                                        <div class="contact-form--field name">
+                                            <div class="label">
+                                                <label for="name">Ім'я</label>
+                                            </div>
+
+                                            <div class="input">
+                                                <input placeholder="Name" name="name" type="text">
+                                            </div>
                                         </div>
 
-                                        <div class="input">
-                                            <input placeholder="Name" name="name" type="text">
+                                        <div class="contact-form--field phone">
+                                            <div class="label">
+                                                <label for="name">Телефон</label>
+                                            </div>
+
+                                            <div class="input">
+                                                <input placeholder="Name" name="name" type="text">
+                                            </div>
                                         </div>
 
-                                        <div class="error-message"></div>
-                                    </div>
+                                        <div class="contact-form--field email">
+                                            <div class="label">
+                                                <label for="name">Email</label>
+                                            </div>
+
+                                            <div class="input">
+                                                <input placeholder="Name" name="name" type="text">
+                                            </div>
+                                        </div>
+
+                                        <div class="contact-form--field text">
+                                            <div class="label">
+                                                <label for="name">Повідомлення</label>
+                                            </div>
+
+                                            <div class="textarea">
+                                                <textarea placeholder="Message" name="message" id="" cols="30"
+                                                    rows="10"></textarea>
+                                            </div>
+                                        </div>
+
+                                        <div class="field submit">
+                                            <input type="submit" class="btn" name="feedback-form" value="Submit">
+                                        </div>
+                                    </form>
                                 </div>
 
-                                <div class="fld phone">
-                                    <div class="contact-form--field">
-                                        <div class="label">
-                                            <label for="name">Телефон</label>
-                                        </div>
+                                <div class="col-2">
+                                    <div class="page-form--col-2">
+                                        <h4 class="title">Наші проекти</h4>
+                                        <ul class="page-form--projects">
+                                            <li class="item">
+                                                <a href="" class="link">
+                                                    <div class="page-form--project">
+                                                        <div class="col-1">
+                                                            <img src="../img/blog/post-img-1.jpg" alt="">
+                                                        </div>
 
-                                        <div class="input">
-                                            <input placeholder="Name" name="name" type="text">
-                                        </div>
+                                                        <div class="col-2">
+                                                            <h4 class="title">Нагодуй голодного</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
 
-                                        <div class="error-message"></div>
+                                            <li class="item">
+                                                <a href="" class="link">
+                                                    <div class="page-form--project">
+                                                        <div class="col-1">
+                                                            <img src="../img/blog/post-img-1.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="col-2">
+                                                            <h4 class="title">Робота є</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="" class="link">
+                                                    <div class="page-form--project">
+                                                        <div class="col-1">
+                                                            <img src="../img/blog/post-img-1.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="col-2">
+                                                            <h4 class="title">Життя триває</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="" class="link">
+                                                    <div class="page-form--project">
+                                                        <div class="col-1">
+                                                            <img src="../img/blog/post-img-1.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="col-2">
+                                                            <h4 class="title">Відкрий свою мрію</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="item">
+                                                <a href="" class="link">
+                                                    <div class="page-form--project">
+                                                        <div class="col-1">
+                                                            <img src="../img/blog/post-img-1.jpg" alt="">
+                                                        </div>
+
+                                                        <div class="col-2">
+                                                            <h4 class="title">Ти вдома</h4>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
-
-                                <div class="fld email">
-                                    <div class="contact-form--field">
-                                        <div class="label">
-                                            <label for="name">Email</label>
-                                        </div>
-
-                                        <div class="input">
-                                            <input placeholder="Name" name="name" type="text">
-                                        </div>
-
-                                        <div class="error-message"></div>
-                                    </div>
-                                </div>
-
-                                <div class="fld text">
-                                    <div class="contact-form--field">
-                                        <div class="label">
-                                            <label for="name">Повідомлення</label>
-                                        </div>
-
-                                        <div class="textarea">
-                                            <textarea placeholder="Message" name="message" id="" cols="30"
-                                                rows="10"></textarea>
-                                        </div>
-
-                                        <div class="error-message"></div>
-                                    </div>
-                                </div>
-
-                                <div class="fld submit">
-                                    <div class="field submit">
-                                        <input type="submit" class="btn" name="feedback-form" value="Submit">
-                                    </div>
-                                </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -266,6 +409,9 @@
         @@include('blocks/footer.html')
         <!-- end header -->
     </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
 
     <script src="./js/script.js"></script>
 </body>

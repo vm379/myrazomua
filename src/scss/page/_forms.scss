@@ -13,7 +13,7 @@
     display: grid;
     gap: 15px;
 
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 
     grid-template-areas:
@@ -35,11 +35,11 @@
 
     @include media-breakpoint-only(xs) {}
 
-    @include media-breakpoint-down(lg) {
+    @include media-breakpoint-down(xl) {
         display: block;
     }
 
-    .fld {
+    .contact-form--field {
         @include media-breakpoint-only(xxl) {}
 
         @include media-breakpoint-only(xl) {}
@@ -79,6 +79,47 @@
 
     .text {
         grid-area: text;
+
+        display: grid;
+        grid-template-rows: auto 1fr;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {}
+
+        @include media-breakpoint-only(xs) {}
+
+        @include media-breakpoint-down(lg) {
+            display: block;
+        }
+
+        .textarea {
+            display: flex;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {}
+
+            @include media-breakpoint-only(sm) {}
+
+            @include media-breakpoint-only(xs) {}
+
+            @include media-breakpoint-down(lg) {
+                display: block;
+            }
+
+            textarea {}
+        }
     }
 
     .submit {
@@ -110,6 +151,155 @@
                 color: none;
                 outline: none;
             }
+        }
+    }
+}
+
+.page-form-columns {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {
+        flex-direction: column;
+    }
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+    }
+
+    >.col-1 {
+        flex-grow: 1;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            flex-grow: 0;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-grow: 0;
+        }
+    }
+
+    >.col-2 {
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {}
+
+        @include media-breakpoint-only(sm) {
+            padding-top: 55px;
+        }
+
+        @include media-breakpoint-only(xs) {
+            padding-top: 55px;
+        }
+    }
+}
+
+.page-form--col-2 {
+    width: 360px;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {
+        width: auto;
+    }
+
+    @include media-breakpoint-only(xs) {
+        width: auto;
+    }
+
+    .title {
+        @include title-font();
+        color: #333333;
+        font-size: 16px;
+    }
+}
+
+.page-form--projects {
+    padding: 0 25px;
+
+    .item {
+        margin: 15px 0 15px 0;
+        padding: 5px 0;
+        border-bottom: 1px solid #f6f6f6;
+
+        &:first-child {
+            margin: 0 0 15px 0;
+        }
+
+        &:last-child {}
+
+        .link {
+
+            &:hover {
+
+                .page-form--project {
+
+                    >.col-1 {
+
+                        img {}
+                    }
+
+                    >.col-2 {
+
+                        >.title {
+                            color: #42b8d4;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-form--project {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    >.col-1 {
+
+        img {
+            display: block;
+            width: 75px;
+            height: auto;
+        }
+    }
+
+    >.col-2 {
+        flex-grow: 1;
+        padding-left: 15px;
+
+        >.title {
+            font-size: 12px;
+            text-align: left;
+            color: #898989;
+            padding: 0;
         }
     }
 }

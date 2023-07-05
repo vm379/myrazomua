@@ -1,0 +1,209 @@
+.team {}
+
+.team-page-cards {
+    margin: 50px 0;
+}
+
+.team-page-card {
+    margin: 50px 0 50px 0;
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #e6e6e6;
+
+    &:first-child {
+        margin: 0 0 50px 0;
+    }
+
+    &:last-child {
+        margin: 50px 0 0 0;
+    }
+
+    article {
+
+        p {
+            margin: 15px 0;
+        }
+    }
+}
+
+.team-page-card:nth-child(odd) {
+    display: flex;
+    flex-direction: row;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        flex-basis: 20%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 30%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 25%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+        }
+    }
+
+    .col-2 {
+        flex-basis: 80%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 70%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 75%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+            padding-top: 25px;
+        }
+
+        article {
+            padding-left: 25px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {}
+
+            @include media-breakpoint-only(sm) {}
+
+            @include media-breakpoint-only(xs) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.team-page-card:nth-child(even) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    @include media-breakpoint-only(xxl) {}
+
+    @include media-breakpoint-only(xl) {}
+
+    @include media-breakpoint-only(lg) {}
+
+    @include media-breakpoint-only(md) {}
+
+    @include media-breakpoint-only(sm) {}
+
+    @include media-breakpoint-only(xs) {
+        flex-direction: column;
+    }
+
+    .col-1 {
+        flex-basis: 20%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 30%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 25%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+        }
+    }
+
+    .col-2 {
+        flex-basis: 80%;
+
+        @include media-breakpoint-only(xxl) {}
+
+        @include media-breakpoint-only(xl) {}
+
+        @include media-breakpoint-only(lg) {}
+
+        @include media-breakpoint-only(md) {
+            flex-basis: 70%;
+        }
+
+        @include media-breakpoint-only(sm) {
+            flex-basis: 75%;
+        }
+
+        @include media-breakpoint-only(xs) {
+            flex-basis: auto;
+            padding-top: 25px;
+        }
+
+        article {
+            padding-right: 25px;
+
+            @include media-breakpoint-only(xxl) {}
+
+            @include media-breakpoint-only(xl) {}
+
+            @include media-breakpoint-only(lg) {}
+
+            @include media-breakpoint-only(md) {}
+
+            @include media-breakpoint-only(sm) {}
+
+            @include media-breakpoint-only(xs) {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+.team-page-card--img {
+
+    img {
+        display: block;
+        max-width: 100%;
+    }
+}
+
+.team-page-card--article {
+
+    .title {
+        font-size: 16px;
+        @include title-font();
+        letter-spacing: 1px;
+        color: #333333;
+    }
+}

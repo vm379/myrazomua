@@ -14,6 +14,8 @@
 @import "./header/lang";
 @import "./header/mobile-menu";
 
+@import "./page/donate-link-panel";
+
 @import "./footer/footer";
 @import "./footer/social";
 @import "./footer/menu";
@@ -21,6 +23,7 @@
 @import "./header/main-menu";
 
 @import "./page/page";
+@import "./gallery/page-gallery";
 
 @import "./page/landing/landing";
 @import "./page/landing/links-panel";
@@ -33,6 +36,7 @@
 @import "./page/blog/blog-page-card";
 @import "./page/blog/post";
 @import "./page/team";
+@import "./page/team/team";
 
 @import "./page/documents";
 @import "./page/donate/card";
