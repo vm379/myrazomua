@@ -100,4 +100,25 @@
             padding: 0 0 0 15px;
         }
     }
+
+    a {
+        margin: 0 3px;
+        font-size: 14px;
+        color: #42b8d4;
+        border-bottom: 1px solid #42b8d4;
+
+        &:hover {
+
+            color: #3999b1;
+            border-bottom: 1px solid #3999b1;
+        }
+    }
+
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto !important;
+
+    }
 }

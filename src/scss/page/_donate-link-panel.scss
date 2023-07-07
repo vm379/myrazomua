@@ -34,7 +34,7 @@
     text-align: center;
 
     .t {
-        font-size: 18px;
+        font-size: 16px;
         @include title-font();
         color: #ffffff;
         text-transform: uppercase;
@@ -99,7 +99,7 @@
 
     @include media-breakpoint-down(lg) {
         flex-direction: column;
-        padding: 25px 0;
+        padding: 25px 15px;
     }
 
     .col-1 {
